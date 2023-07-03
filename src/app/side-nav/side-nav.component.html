@@ -1,0 +1,18 @@
+<mat-drawer-container class="h-full">
+  <mat-drawer #drawer mode="over" class="w-1/4 h-full">
+    <mat-list class="h-full">
+      <mat-list-item>Item 1</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 2</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Item 3</mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <button (click)="drawer.toggle()">
+      <h1 class="text-red-500 text-3xl font-bold">
+        Swiss Army App
+      </h1>
+    </button>
+  </mat-drawer-content>
+</mat-drawer-container>
